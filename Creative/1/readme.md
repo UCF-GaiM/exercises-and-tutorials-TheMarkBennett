@@ -10,7 +10,7 @@ The speeches were scraped from an archive site [Obama Speeches](http://obamaspee
 GPT2 was used to create new speeches using Obama previous speeches.
 
 
-## Improvements need
+## Improvements needed
 The website with the speech is older making it harder to get that content. I also go titles and some content that was not needed. 
 
 The content has a wonky format that I could not fix. Fixing this would help with sentence structure and give it a more natural look.
