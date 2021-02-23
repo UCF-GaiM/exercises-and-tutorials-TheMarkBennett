@@ -1,6 +1,6 @@
-# Creative Project 1
+# Summary of work
 
-This project creates a new speech from president Barack Obama previous speeches. 
+This project uses beautiful soup to scrape all of the content of a website. The content from each page is then combined in to a text file. That text file is then used in gpt 2 to create a new work 
 
 ## Web Scraping
 
