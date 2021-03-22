@@ -1,0 +1,49 @@
+{
+  "insultOne": [
+    "Losers",
+    "failures",
+    "flunkees",
+    "deadbeats",
+    "has-beens",
+    "flops"
+  ],
+  "insultTwo": ["haters", "cynics", "doubters", "egoists", "skeptics"],
+  "origin": [
+    "Sorry #insultOne# and #insultTwo#, but #name#'s I.Q. is one of the #IQ# -and you all know it! Please don't feel so #insultThree# or #intsultFour#, it's not your fault"
+  ],
+  "name": [
+    "Donald",
+    "Mark",
+    "Hanae",
+    "Sthephany",
+    "Bri",
+    "Marty",
+    "John",
+    "Cameron",
+    "Michelle",
+    "Bernie"
+  ],
+  "IQ": ["highest", "greatest", "finest", "best", "supreme"],
+  "insultThree": [
+    "stupid",
+    "dumb",
+    "unintelligent",
+    "ignorant",
+    "foolish",
+    "simple",
+    "half-witted",
+    "slow"
+  ],
+  "intsultFour": [
+    "insecure",
+    "self-doubting",
+    "timid",
+    "meek",
+    "doubtful",
+    "lacking confidence",
+    "afraid",
+    "unsure",
+    "passive"
+  ],
+  "symbol6": ["rule"]
+}
