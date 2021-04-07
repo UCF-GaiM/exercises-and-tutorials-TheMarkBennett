@@ -1,66 +1,55 @@
-let foo;
+let lines, markov, data1, data2, foo, x = 160, y = 240;
 
-function setup() { 
+function preload() {
+
+  data1 = loadStrings('/books/beauty.txt');
+  data2 = loadStrings('/books/wonderland.txt');
   
-   foo = new p5.Speech(); // speech synthesis object  
 
-  
-  createCanvas(400, 400);
-  background(255);
-  textAlign(LEFT, TOP);
-  textSize(24);
-  text("Click for ~messages from another world~",
-       20, 20, width-40, height-40);
-} 
-
-
-function draw() { 
 }
 
+function setup() {
 
-function mousePressed() {
-  foo.cancel();  foo.setVoice(Math.floor(random(foo.voices.length))); // can voice
+  foo = new p5.Speech(); // speech synthesis object 
+   
   
-  var grammar = tracery.createGrammar(grammarSource);
-  grammar.addModifiers(tracery.baseEngModifiers);
-  var output = grammar.flatten("#origin#");
-  background(255);
-  text(output, 20, 20, width-40, height-40);
+  createCanvas(500, 500);
+  textFont('helvetica', 16);
+  textLeading(21);
+  textAlign(LEFT);
+
+  lines = ["click to (re)generate"];
+
+  // create a markov model w' n=4
+  markov = RiTa.markov(4);
+
+  // load text into the model
   
-  foo.speak(output); // say something 
-  
-  
-  
+  markov.addText(data1.join(' '));
+  markov.addText(data2.join(' '));
+
+  drawText();
 }
 
-var grammarSource = {
-	"origin": [
-		"When I’m #mood# at my #name#, I ask them to help me find #find# and then put it in my pocket."
-	],
-	"name": [
-		"husband",
-		"wife",
-		"girlfriend",
-		"boyfriend",
-		"lover"
-	],
-	"mood": [
-		"mad",
-		"angry",
-		"upset"
-	],
-	"find": [
-		"my phone",
-		"the remote",
-		"my keys",
-		"my mask",
-		"my hand sanatizer",
-		"",
-		"my ear ring",
-		"my glasses",
-		"my watch"
-	]
-};
+function drawText() {
+    foo.cancel();
+  //foo.listVoices();
+ // foo.setVoice(Math.floor(random(foo.voices.length))); // can voice
+ 
+  
+ 
+  
+  background(50, 30, 40);
+  fill(220);
+  text(lines.join(' '), x, y, 420, 420);
+  if(lines != "click to (re)generate"){
+    foo.speak(lines); // say something 
+  }
+}
 
-
-
+function mouseClicked() {
+   foo.setVoice('Google UK English Female'); // can voice
+  lines = markov.generate(4);
+  x = y = 40;
+  drawText();
+}
