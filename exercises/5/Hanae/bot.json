@@ -1,0 +1,66 @@
+{
+  "name": ["Trump", "Kim Jong Un "],
+  "occupation": ["President", "Fool", "Bully", "Dictator"],
+  "origin": [
+    "#name# the #occupation# has #Size# #Adjective# #Tool# in #Country# at #Place# with #Character#"
+  ],
+  "Adjective": ["Scary", "Heavy", "Serious", "Plastic", "Dangerous"],
+  "Size": ["Big", "Small", "Tiny", "Heavy", "Gigantic"],
+  "Tool": [
+    "button",
+    "cat",
+    "wand",
+    "dog",
+    "stick",
+    "leaf",
+    "laser",
+    "poop machine",
+    "foot bags",
+    "hand ankle"
+  ],
+  "Place": [
+    "Intercourse",
+    "Fucking",
+    "Gobller's Knob",
+    "Hell",
+    "Twatt",
+    "Muff",
+    "Titty Hill",
+    "White House"
+  ],
+  "Country": [
+    "Afghanistan ",
+    "Iraq",
+    "Korea",
+    "Russia",
+    "Iran",
+    "",
+    "England",
+    "Mali",
+    "China",
+    "Slovenia",
+    "Tajikistan",
+    "Austria",
+    "Egypt",
+    "Pakistan",
+    "Lebanon",
+    "Belarus",
+    "Palestine",
+    "USA"
+  ],
+  "Character": [
+    "Bart Simpson",
+    "Snoopy",
+    "Bugs Bunny",
+    "Mikey Mouse",
+    "Shrek",
+    "Dr.Evil",
+    "Oda Mae Brown",
+    "Deadpool",
+    "Regina George",
+    "Walter Sobchak",
+    "Unnamed Barber",
+    "Lord Dark Helmet",
+    "Homer Simpson"
+  ]
+}
